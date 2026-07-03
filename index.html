@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Virus Simulator | Harmless Prank</title>
+    <meta name="description" content="Harmless fake virus scan simulator for entertainment purposes only. No real threats or malware.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Particles -->
+    <div id="particles"></div>
+
+    <!-- Header -->
+    <header class="glass">
+        <h1>⚠️ SYSTEM SECURITY SCAN</h1>
+        <div class="datetime" id="datetime"></div>
+        <button id="soundToggle" class="sound-btn">🔊 Sound: ON</button>
+    </header>
+
+    <!-- System Stats -->
+    <div class="stats-container">
+        <div class="stat-card glass">
+            <h3>CPU Usage</h3>
+            <p id="cpuValue">0%</p>
+        </div>
+        <div class="stat-card glass">
+            <h3>RAM Usage</h3>
+            <p id="ramValue">0%</p>
+        </div>
+        <div class="stat-card glass">
+            <h3>Storage Scanned</h3>
+            <p id="storageValue">0 GB</p>
+        </div>
+    </div>
+
+    <!-- Scan Section -->
+    <div class="scan-container glass">
+        <h2>Scanning System Memory & Files</h2>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+            <span class="progress-text" id="progressText">0%</span>
+        </div>
+
+        <!-- Scan Log -->
+        <div class="scan-log" id="scanLog"></div>
+    </div>
+
+    <!-- Result Popup -->
+    <div id="resultPopup" class="popup glass hidden">
+        <h2 id="resultTitle">⚠️ THREATS DETECTED</h2>
+        <p id="resultMessage">Your system appears to be infected with potentially unwanted programs and security risks.</p>
+        <button id="removeBtn" class="btn btn-danger">Remove Threats Now</button>
+        <button id="restartBtn" class="btn btn-secondary hidden">Run Scan Again</button>
+    </div>
+
+    <!-- Disclaimer -->
+    <footer class="disclaimer">
+        This website is a harmless simulation created by Chae-Won for entertainment and educational purposes only.
+        <br>No real changes are made to your device, no data is collected, and no malware is present.
+    </footer>
+
+    <!-- Audio Elements -->
+    <audio id="scanSound" loop>
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoAACBhYWVjAAAA" type="audio/wav">
+    
+    <audio id="alertSound">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoAACBhaWVjAAAA" type="audio/wav">
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
